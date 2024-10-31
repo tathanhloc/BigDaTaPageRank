@@ -46,7 +46,6 @@ public class PageRankDriver {
           FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
           job.setNumReduceTasks(1); // Đảm bảo chỉ có một reducer để có một file đầu ra duy nhất
-
           System.exit(job.waitForCompletion(true) ? 0 : 1);
      }
 
